@@ -6,11 +6,11 @@ Back to [Projects List](../../README.md#ProjectsList)
 
 - Murat Maga (Seattle Children's Research Institute, UW)
 - Sara Rolfe (Seattle Children's Research Institute, UW)
-- 
+- Andres Diaz-Pinto (Kings College, Nvidia)
 
 # Project Description
 
-<!-- Experiment and refine methods to segment multiple organs in CT/MRI scans of fetal mice . -->
+<!-- Experiment and refine methods to segment multiple organs in contrast-enhanced microCT scans of fetal mice . -->
 
 ## Objective
 
@@ -24,9 +24,11 @@ Back to [Projects List](../../README.md#ProjectsList)
 
 <!-- Describe here HOW you would like to achieve the objectives stated above. -->
 
-1. Refine inital model and DeepEdit application
-2. Experiment with additional data types
-3. ...
+1. Dataset comes from International Mouse Phenotyping Consortium's Knockout Mouse Phenotyping project. Samples are E15 days old, fetal mice infused into iodine solution to increase soft tissue contrast during microCT imaging. Scans are publicly available at https://www.mousephenotype.org/.
+2. We have used the existing atlas and a two-pass ANTs (SyNCC) registration to derive labels. We have manually reviewed the labels, and almost all of them were usable as is, without expert modification.  
+3. Modify the multi-label version of the DeepEdit application to match our labels (52 labels in total).
+4. Compare visually as well as quantitatively how similar the MonaiLabel estimates to previously segmented labels. 
+5. ...
 
 ## Progress and Next Steps
 
